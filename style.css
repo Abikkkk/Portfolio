@@ -1,0 +1,304 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Garamond';
+}
+body{
+    background: #080808;
+    color:#fff;
+}
+#header{
+    height:100vh;
+    width:100%;
+    background-image: url('Abikpadman.jpg');
+    background-position: center;
+    background-size: cover;
+    /* break */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.logo{
+    width:140px;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px; 
+}
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    position:relative;
+    font-size:18px;
+}
+nav ul li a:hover{
+    width: 100%;
+    color: #0431f7;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.parallax-header{
+    position: absolute;
+    top: 300px;
+    right: 250px;
+    bottom: 100px;
+    left: 340px;
+    /* img{
+        display: block;       
+        position: absolute;
+        background-position: center;
+        background-size: cover;
+       
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    } */
+}
+/* <!------------ About ------------> */
+#about img{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* .about-col-1{
+    flex-basis:35%;
+    background-color: azure;
+} */
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;   
+}
+.about-col-2{
+    flex-basis:100%;
+}
+.sub-title{
+    font-size: 50px;
+    padding: 45px 0;
+    color: #ababab;
+}
+.about-col-2 p{
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:justify;
+}
+/* <!------------ Skills ------------> */
+/* .services-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid: gap 49px;
+    grid-template-columns: repeat(autofit,minmax(250px,1fr));
+}
+.cardss{
+    flex-basis: 25%;
+    margin-top: 50px;
+    transition: 0.3s;
+    max-width: 500px;
+    padding: 20px 0px 50px 0px;
+    text-align: center;
+    background-color: #f78b04;
+    display: grid;
+    grid-gap:40px;
+    grid-template-columns: repeat(autofit,minmax(250px,1fr));
+    .title{
+      font-size: 50px;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #ffffff;
+      white-space: nowrap;
+      font-weight: 500;
+      letter-spacing: 2.1px;
+      line-height: 60px;
+      user-select: none;
+    }
+  }
+.cardsss{
+    flex-basis: 20%;
+    margin-top: 50px;
+    transition: 0.3s;
+    max-width: 500px;
+    padding: 20px 0px 50px 0px;
+    text-align: center;
+    background-color: #f78b04;
+    display: grid;
+    grid: gap 40px;
+    grid-template-columns: repeat(autofit,minmax(250px,1fr));
+    .title{
+      font-size: 50px;
+      text-align: center;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #ffffff;
+      white-space: nowrap;
+      font-weight: 500;
+      letter-spacing: 2.1px;
+      line-height: 60px;
+      user-select: none;
+    }
+  }
+.title ul{
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #690101;
+    padding-top: 10px;
+      font-weight: 0;
+      letter-spacing: 0px;
+      line-height: 40px;
+      user-select: none;
+      font-weight: bold;
+} */
+.services-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(autofit,minmax(250px,1fr));
+}
+.title{
+    font-size: 90px;
+}
+/* <!------------ Works ------------> */
+.cards{
+    position: center;  
+    overflow: hidden;
+    margin: auto; 
+    margin-top: 50px;
+    transition: 0.3s;
+    max-width: 500px;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    background-color: #7393B3;
+    .title{
+      font-size: 30px;
+      text-align: center;
+      font-family: 'Palatino';
+      color: #ffffff;
+      white-space: nowrap;
+      font-weight: 500;
+      letter-spacing: 2.1px;
+      line-height: 60px;
+      user-select: none;
+      
+    }
+    .title a{
+      text-decoration: none;
+    }
+  }
+  .cards img{
+    width:100%;
+    height: 100%;
+    transition: transform 7s;
+  }
+  .cards:hover{
+    box-shadow: 0 8px 16px 0 #000000;
+    .title{         
+      color:#000000;
+      transition: 0.3s;
+    }
+  }
+  .cards:hover img{
+    /* transform: scale(1.1); */
+  }
+  .cardss{
+    .title{
+      text-align: center;
+    }
+  }
+  
+  .cardsss{
+    .title{
+      text-align: center;
+    }
+  }
+  /* <!------------ Contact ------------> */
+  /* .contact-right{
+    flex-basis: 100%;
+  }
+  .btn.btn2{
+    display: inline-block;
+    background: #ff7474;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+  } 
+  .contact-right form{
+    width: 100%;
+  }
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:#262626;
+    padding:15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+  } */
+  .contact {
+    text-align: center; /* Center the contact section horizontally */
+    padding: 2rem; /* Add some padding for spacing */
+  }
+  .contact-title {
+    margin-bottom: 7rem; /* Add space between title and list */
+  }
+  .contact-info {
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 7%;
+    padding-left: 10%; /* Remove default padding */
+    font-size: 25px;
+    margin: 0; /* Remove default margin */
+    display: flex; /* Make items display inline */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center; /* Align items vertically */
+  }
+  .contact-info li {
+    display: inline-block; /* Make list items behave inline */
+  }
+  .contact-info a {
+    color: #ffffff; /* Set text color */
+    text-decoration: none; /* Remove underline on hover */
+    transition: color 0.3s ease; /* Add smooth hover effect */
+  }
+  .contact-info a:hover {
+    color: #0431f7; /* Change text color on hover */
+  }
+  /* Media Queries */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px 5%;
+    }
+    
+    .parallax-header {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+    
+    .title {
+        font-size: 50px;
+    }
+    
+    .contact-info {
+        padding: 0;
+        flex-direction: column;
+    }
+}
